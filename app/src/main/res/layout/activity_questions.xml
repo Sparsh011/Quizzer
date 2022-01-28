@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Questions">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="406dp"
+        android:layout_height="52dp"
+        android:background="#00E6E6"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:padding="5sp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="390dp"
+        android:layout_height="63dp"
+        android:background="#00E6E6"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:textColor="#232020"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <Button
+        android:id="@+id/optionA"
+        android:layout_width="122dp"
+        android:layout_height="74dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/img"
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintBottom_toTopOf="@+id/optionC"
+        app:layout_constraintEnd_toStartOf="@+id/optionB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <Button
+        android:id="@+id/optionB"
+        android:layout_width="122dp"
+        android:layout_height="74dp"
+
+        android:layout_margin="5dp"
+        android:background="@drawable/img"
+        android:padding="10dp"
+
+        android:fontFamily="@font/fredoka_one"
+
+        app:layout_constraintBottom_toTopOf="@+id/optionD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/optionA"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <Button
+        android:id="@+id/optionC"
+        android:layout_width="122dp"
+        android:layout_height="74dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/img"
+        android:padding="10dp"
+
+        android:fontFamily="@font/fredoka_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/optionD"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionA" />
+
+    <Button
+        android:id="@+id/optionD"
+        android:layout_width="122dp"
+        android:layout_height="74dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/img"
+        android:fontFamily="@font/fredoka_one"
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/optionB"
+        app:layout_constraintTop_toBottomOf="@+id/optionB" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/score_background"
+        android:gravity="center"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="28sp"
+        android:layout_margin="30dp"
+        android:padding="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <Button
+        android:id="@+id/buttonPopup"
+        android:layout_width="355dp"
+        android:layout_height="230dp"
+        android:background="@drawable/img_5"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#262626"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:text="Exit Game"
+        android:textColor="#EFE9E9"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPopup"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPopup"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="@+id/buttonPopup"
+        app:layout_constraintTop_toTopOf="@+id/buttonPopup"
+        app:layout_constraintVertical_bias="0.885" />
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#262626"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:text="Play Again"
+        android:textColor="#F3ECEC"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/exit"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPopup"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="@+id/buttonPopup" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="20sp"
+        android:textColor="#E6DADA"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPopup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonPopup"
+        app:layout_constraintVertical_bias="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
